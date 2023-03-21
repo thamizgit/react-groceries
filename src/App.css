@@ -12,7 +12,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +40,120 @@
     transform: rotate(360deg);
   }
 }
+header{
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  color: whitesmoke;
+  font-size:calc(4rem - 100%);
+  font-weight: bolder;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  font-size: calc(3rem - 100%);
+  min-width: 100%;
+  background-color: blue;
+  color:white;
+  }
+  main{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+  ul li{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    background-color: rgb(235, 235, 235);
+    justify-content: flex-start;
+  
+  }
+  li label{
+    font-size: 2rem;
+    padding:1rem;
+  }
+  input{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    min-height: 40px;
+    min-width: 50px;
+  }
+  li .delete-icon{
+    font-size: 4rem;
+    color:red;
+    position:absolute;
+    right:0;
+  }
+  li .delete-icon:hover{
+    color:blue;
+  }
+  
+  .addItem-label{
+    position:absolute;
+    left:-10000px;
+  }
+  .additem input{
+    display: flex;
+    margin-top:1rem;
+    color:whitesmoke;
+    background-color: black;
+    flex-direction: row;
+    flex-grow: 1;
+    width: calc(100% - 70px);
+    border-radius: 2px;
+  }
+  .additem button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height:50px;
+    min-width: 50px;
+    font-size: 50px;
+    position: relative;
+    top:-50px;
+    left: calc(100% - 60px);
+    color:dodgerblue ;
+    border-radius: 4px;
+    border: 1px solid green;
+    
+    
+    
+    
+  }
+  .itemslist{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50%;
+  }
+  .searchItem{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .searchItem label{
+    position:absolute;
+    left:-19999px;
+  }
+  .searchItem input{
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 0px;
+    position: relative;
+    top:-12px;
+    background-color: black;
+    color: whitesmoke;
+  }
